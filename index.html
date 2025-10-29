@@ -8,21 +8,19 @@
     <link rel="stylesheet" href="./src/style.css" />
     <script type="module" src="./src/main.js" defer></script>
   </head>
-  <body
-    class="max-h-screen grid grid-rows-[auto_1fr_auto] grid-cols-[minmax(auto_50%_50%_auto)]"
-  >
-    <header class="bg-blue-950 p-6">
+  <body class="max-h-screen grid grid-rows-[auto_auto_1fr_auto]">
+    <header class="bg-{#101828} p-6">
       <nav>
-        <ul class="flex justify-between text-white">
-          <li class="text-2xl font-bold">SaaSify</li>
-          <li class="flex gap-6">
+        <div class="flex justify-between text-white">
+          <div class="text-2xl font-bold">SaaSify</div>
+          <div class="flex gap-6">
             <a href="/" class="hover:text-amber-300">Home</a>
             <a href="/" class="hover:text-amber-300">Features</a>
             <a href="/" class="hover:text-amber-300">Pricing</a>
             <a href="/" class="hover:text-amber-300">About</a>
             <a href="/" class="hover:text-amber-300">Contact</a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -33,13 +31,15 @@
       <a href="/" class="hover:text-gray-600">Policy</a>
       <a href="/" class="hover:text-gray-600">Terms</a>
     </aside>
-    <main class="bg-amber-50 p-4 text-black">
+    <main class="bg-white p-4 text-black flex flex-col">
       <section
         class="flex h-[80dvh] flex-col justify-center gap-7 bg-[#dbeafe] align-middle"
         aria-label="hero"
       >
-        <h1 class="text-center text-6xl">Empower your workflow with SaaSify</h1>
-        <p class="text-center text-xl">
+        <h1 class="flex text-center text-6xl">
+          Empower your workflow with SaaSify
+        </h1>
+        <p class="flex text-center justify-center text-xl">
           Simple. Scalable. Supercharged productivity for modern teams.
         </p>
 
@@ -169,7 +169,7 @@
         </div>
       </section>
     </main>
-    <footer class="bg-blue-950 p-5 flex">
+    <footer class="bg-{#101828} p-5 flex">
       <section class="flex justify-between w-full text-white">
         <div class="flex">
           <p>Privacy</p>
@@ -177,7 +177,7 @@
           <p>Support</p>
         </div>
         <div class="flex">
-          <p>icon</p>
+          <i class="fa-brands fa-twitter" style="color: #74c0fc"></i>
           <p>icon</p>
           <p>icon</p>
         </div>
