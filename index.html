@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>module-2-tailwind</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script type="module" src="./src/main.js" defer></script>
+  </head>
+  <body
+    class="max-h-screen grid grid-rows-[auto_1fr_auto] grid-cols-[minmax(auto_50%_50%_auto)]"
+  >
+    <header class="bg-blue-950 p-6">
+      <nav>
+        <ul class="flex justify-between text-white">
+          <li class="text-2xl font-bold">SaaSify</li>
+          <li class="flex gap-6">
+            <a href="/" class="hover:text-amber-300">Home</a>
+            <a href="/" class="hover:text-amber-300">Features</a>
+            <a href="/" class="hover:text-amber-300">Pricing</a>
+            <a href="/" class="hover:text-amber-300">About</a>
+            <a href="/" class="hover:text-amber-300">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside class="bg-amber-300 text-black px-6 py-2 underline gap-4 flex">
+      <a href="/" class="hover:text-gray-600">Discounts</a>
+      <a href="/" class="hover:text-gray-600">Shipping</a>
+      <a href="/" class="hover:text-gray-600">Brands</a>
+      <a href="/" class="hover:text-gray-600">Policy</a>
+      <a href="/" class="hover:text-gray-600">Terms</a>
+    </aside>
+    <main class="bg-amber-50 p-4 text-black">
+      <section
+        class="flex h-[80dvh] flex-col justify-center gap-7 bg-[#dbeafe] align-middle"
+        aria-label="hero"
+      >
+        <h1 class="text-center text-6xl">Empower your workflow with SaaSify</h1>
+        <p class="text-center text-xl">
+          Simple. Scalable. Supercharged productivity for modern teams.
+        </p>
+
+        <button
+          class="mx-auto w-sm rounded-2xl cursor-pointer bg-blue-400 py-6 hover:bg-blue-500 hover:border-2"
+        >
+          Get Started
+        </button>
+      </section>
+
+      <section
+        aria-label="features section"
+        class="flex flex-col items-center gap-1 px-5 pt-10"
+      >
+        <h2 class="text-5xl">Features</h2>
+        <div class="flex justify-between gap-4 py-3">
+          <div class="card rounded-2xl border">
+            <div class="p-5">
+              <h3 class="text-3xl">Fast Setup</h3>
+              <p class="flex items-center text-base">
+                Get started in minutes with intuitive onboarding.
+              </p>
+            </div>
+
+            <p class="border-t bg-gray-200 p-5 rounded-b-2xl text-sm">
+              No technical knowledge needed
+            </p>
+          </div>
+
+          <div class="card rounded-2xl border">
+            <div class="p-5">
+              <h3 class="text-3xl">Secure by Design</h3>
+              <p class="flex items-center text-base">
+                Enterprise-grade security built in from day one.
+              </p>
+            </div>
+
+            <p class="border-t bg-gray-200 p-5 rounded-b-2xl text-sm">
+              Trusted by thousands
+            </p>
+          </div>
+
+          <div class="card rounded-2xl border">
+            <div class="p-5">
+              <h3 class="text-3xl">Scalable</h3>
+              <p class="flex items-center text-base">
+                From startup to enterprise, scale as you grow.
+              </p>
+            </div>
+
+            <p class="border-t bg-gray-200 p-5 rounded-b-2xl text-sm">
+              Flexible pricing
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        aria-label="pricing section"
+        class="flex flex-col items-center gap-1 px-5 pt-10"
+      >
+        <h2 class="text-5xl font-400 pb-5">Pricing</h2>
+        <div class="flex w-full justify-between gap-4 py-3">
+          <div
+            class="card flex flex-col items-center gap-3 rounded-2xl border p-5 w-full"
+          >
+            <h3 class="text-center text-3xl">Basic</h3>
+            <p class="flex items-center text-2xl font-bold">$19/mo</p>
+            <p class="flex items-center text-base">✔ Feature One</p>
+            <p class="flex items-center text-base">✔ Feature Two</p>
+            <p class="flex items-center text-base">✔ Feature Three</p>
+
+            <button class="w-full rounded-2xl bg-blue-500 p-3 text-white">
+              Choose Plan
+            </button>
+          </div>
+          <div
+            class="card flex flex-col items-center gap-3 rounded-2xl border p-5 w-full"
+          >
+            <h3 class="text-center text-3xl">Pro</h3>
+            <p class="flex items-center text-2xl font-bold">$39/mo</p>
+            <p class="flex items-center text-base">✔ All Basic Features</p>
+            <p class="flex items-center text-base">✔ Extra Tools</p>
+            <p class="flex items-center text-base">✔ Priority Support</p>
+
+            <button class="w-full rounded-2xl bg-blue-500 p-3 text-white">
+              Choose Plan
+            </button>
+          </div>
+          <div
+            class="card flex flex-col items-center gap-3 rounded-2xl border p-5 w-full"
+          >
+            <h3 class="text-center text-3xl">Enterprise</h3>
+            <p class="flex items-center text-2xl font-bold">$79/mo</p>
+            <p class="flex items-center text-base">✔ Everything in Pro</p>
+            <p class="flex items-center text-base">✔ Custom Solutions</p>
+            <p class="flex items-center text-base">✔ Dedicated Support</p>
+
+            <button class="w-full rounded-2xl bg-blue-500 p-3 text-white">
+              Choose Plan
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section aria-label="Customer Testimonials" class="px-5 py-10">
+        <h2 class="capitalize flex justify-center text-5xl font-400 pb-5">
+          What our Users say
+        </h2>
+        <div class="flex gap-4 justify-center">
+          <div class="border rounded-lg p-6 max-w-md bg-white shadow-sm">
+            <p class="text-gray-600 italic mb-4">
+              "SaaSify transformed the way we work. The UI is clean, and the
+              onboarding was instant!"
+            </p>
+            <p class="text-gray-800 font-semibold">
+              – Alex R., Product Manager
+            </p>
+          </div>
+
+          <div class="border rounded-lg p-6 max-w-md bg-white shadow-sm">
+            <p class="text-gray-600 italic mb-4">
+              "Best value for money. We scaled up without breaking the bank."
+            </p>
+            <p class="text-gray-800 font-semibold">– Priya K., CTO</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-blue-950 p-5 flex">
+      <section class="flex justify-between w-full text-white">
+        <div class="flex">
+          <p>Privacy</p>
+          <p>Terms</p>
+          <p>Support</p>
+        </div>
+        <div class="flex">
+          <p>icon</p>
+          <p>icon</p>
+          <p>icon</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
